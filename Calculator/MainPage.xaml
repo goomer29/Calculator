@@ -12,7 +12,7 @@
      RowDefinitions="*,*,*,*,*,*"
      RowSpacing="3">
         <!--  שורת התוצאה  -->
-        <Label
+        <Label x:Name="result"
            Grid.ColumnSpan="4"
            FontSize="Large"
            HorizontalTextAlignment="End"
@@ -77,6 +77,15 @@
             Clicked="MathOperationClicked"
             Text="-"
             TextColor="Black" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="+"
+            TextColor="Black" />
         <!--  כפתורי הפעולה  -->
         <Button
             Grid.Row="5"
@@ -92,7 +101,7 @@
             Padding="5"
             Background="Transparent"
             BorderWidth="3"
-            Clicked="MathOperationClicked"
+            Clicked="Dot_Clicked"
             Text="."
             TextColor="Black" />
         <Button
@@ -101,7 +110,7 @@
             Padding="5"
             Background="Transparent"
             BorderWidth="3"
-            Clicked="MathOperationClicked"
+            Clicked="EqualsClicked"
             Text="="
             TextColor="Black" />
 
