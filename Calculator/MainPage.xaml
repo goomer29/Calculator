@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+    
+    <!--  Grid definitions  -->
+    <Grid x:Name="calcGrid"
+     BackgroundColor="LightGrey"
+     Margin="15"
+     ColumnDefinitions="*,*,*,*"
+     ColumnSpacing="3"
+     RowDefinitions="*,*,*,*,*,*"
+     RowSpacing="3">
+        <!--  שורת התוצאה  -->
+        <Label
+           Grid.ColumnSpan="4"
+           FontSize="Large"
+           HorizontalTextAlignment="End"
+           Text="0"
+           TextColor="Black"/>
+        <!--  הכפתורים המיוחדים  -->
+        <Button
+            Grid.Row="1"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="CE_Clicked"
+            Text="CE"
+            TextColor="Black"/>
+        <!--  הכפתורים המיוחדים  -->
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="C_Clicked"
+            Text="C"
+            TextColor="Black"/>
+        <!--  הכפתורים המיוחדים  -->
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="BackSpaceClicked"
+            Text="X"
+            TextColor="Black"/>
+        <!--  כפתורי הפעולה  -->
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="/"
+            TextColor="Black" />
+        <!--  כפתורי הפעולה  -->
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="*"
+            TextColor="Black" />
+        <!--  כפתורי הפעולה  -->
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="-"
+            TextColor="Black" />
+        <!--  כפתורי הפעולה  -->
+        <Button
+            Grid.Row="5"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="+-"
+            TextColor="Black" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="."
+            TextColor="Black" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            Padding="5"
+            Background="Transparent"
+            BorderWidth="3"
+            Clicked="MathOperationClicked"
+            Text="="
+            TextColor="Black" />
+
+
+
+    </Grid>
+    
+
+
+
+</ContentPage>
